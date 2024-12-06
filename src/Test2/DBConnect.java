@@ -1,4 +1,4 @@
-package test1;
+package Test2;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class DBConnect {
     public static final String HOSTNAME = "localhost";
     public static final String PORT = "1433";
-    public static final String DBNAME = "javatest";
+    public static final String DBNAME = "Test";
     public static final String USERNAME = "sa";
     public static final String PASSWORD = "0000";
 

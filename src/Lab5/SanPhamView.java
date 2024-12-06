@@ -19,12 +19,6 @@ public class SanPhamView extends javax.swing.JFrame {
         fillForm(dssp.get(0));
     }
     
-    public void loadItem(){
-        for(String tenLoai: dsLoai()){
-            cbbLoai.addItem(tenLoai);
-        }
-    }
-    
     public List<String> dsLoai(){
         List<String> ds = new ArrayList<>();
         String sql = "SELECT TenLoai FROM loaisanpham ";
@@ -38,6 +32,12 @@ public class SanPhamView extends javax.swing.JFrame {
             return ds;
         } catch (Exception e) {
             return null;
+        }
+    }
+    
+    public void loadItem(){
+        for(String tenLoai: dsLoai()){
+            cbbLoai.addItem(tenLoai);
         }
     }
     
