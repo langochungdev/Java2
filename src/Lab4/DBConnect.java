@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class DBConnect {
     public static final String HOSTNAME = "localhost";
     public static final String PORT = "1433";
-    public static final String DBNAME = "LAB4JAVA";
+    public static final String DBNAME = "Lab4_Java2";
     public static final String USERNAME = "sa";
     public static final String PASSWORD = "0000";
 
