@@ -41,17 +41,10 @@ CREATE TABLE NguoiHoc (
     DienThoai NVARCHAR(50) NOT NULL,  
     Email NVARCHAR(50) NOT NULL,      
     GhiChu NVARCHAR(MAX),            
-    MaNV NVARCHAR(50) NOT NULL,       
-    NgayDK DATE NOT NULL,             
+    MaNV NVARCHAR(50) NULL,       
+    NgayDK DATE NULL,             
     CONSTRAINT FK_NguoiHoc_NhanVien FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV)
 );
-
-ALTER TABLE NguoiHoc
-ALTER COLUMN MaNV NVARCHAR(50) NULL;
-
-ALTER TABLE NguoiHoc
-ALTER COLUMN NgayDK DATE NULL;
-
 
 CREATE TABLE HocVien (
     MaHV INT PRIMARY KEY IDENTITY(1,1), 
